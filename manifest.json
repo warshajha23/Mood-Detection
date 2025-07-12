@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Mood Music Recommender",
+  "version": "1.0",
+  "description": "Recommends music based on your face and voice mood.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mood Music</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="glass-card">
+    <h1 class="title">🎧 Mood Music</h1>
+    <p class="subtitle">Upload your face & voice — let AI feel your vibe.</p>
+
+    <div class="input-group">
+      <label>📸 Upload Face</label>
+      <input type="file" id="imageInput" accept="image/*">
+    </div>
+
+    <div class="input-group">
+      <label>🎙️ Upload Voice</label>
+      <input type="file" id="audioInput" accept="audio/*">
+    </div>
+
+    <button id="analyzeBtn">🧠 Detect Mood & Play</button>
+
+    <div id="result" class="result-box"></div>
+  </div>
+
+  <script src="emotionDetector.js"></script>
+  <script src="musicRecommender.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
